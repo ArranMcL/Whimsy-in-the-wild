@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.navChild{
+    height: 100%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 4vw;
+    font-family: "Special Elite", system-ui;
+    text-align: center;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+#dropshadow{
+    box-shadow: 0px 10px 5px 0px #bbd6c2;
+}
+
+.pageBox{
+    height:clamp(225px, 45vw, 250px);
+    width: clamp(150px, 15vw, 300px);
+    border-image-source: url(images/border.png);
+    border-image-slice: 50 50 50 50;
+    border-image-width: 5vh;
+    margin: 2vw;
+    transition: box-shadow 0.3s ease-in-out, height 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.pageBox:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    height: clamp(235px, 47vw, 265px);
+    width: clamp(160px, 17vw, 315px);
+}
